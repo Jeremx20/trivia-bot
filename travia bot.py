@@ -7,7 +7,7 @@ import html
 import json
 
 # Bot setup
-TOKEN = "MTM1MTI1Mjg3NjU1ODYwMjI0MA.GgpwHR.KbrXDIAjsX_nHifSTTMprglAAG-gJf3P0uu0n0"
+TOKEN = ""
 intents = discord.Intents.default()
 intents.message_content = True
 bot = commands.Bot(command_prefix="!", intents=intents)
