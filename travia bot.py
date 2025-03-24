@@ -12,7 +12,7 @@ intents = discord.Intents.default()
 intents.message_content = True
 bot = commands.Bot(command_prefix="!", intents=intents)
 
-# Variables globales pour stocker la question et les réponses
+#  Global variables to store question and answers
 current_question = None
 current_answers = None
 current_correct_answer = None
@@ -146,7 +146,7 @@ async def hint(ctx, hint_type: int = None):
 @bot.event
 async def on_ready():
     print(f"Logged in as {bot.user}")
-    post_trivia.start()  # Démarre la boucle lorsque le bot est prêt
+    post_trivia.start()  
 
 # Run bot
 bot.run(TOKEN)
