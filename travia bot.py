@@ -51,9 +51,9 @@ def get_trivia():
     return None, None, None, None
 
 # Post trivia question at a set interval (every hour)
-@tasks.loop(hours=1)  # Définit l'intervalle, ici toutes les heures
+@tasks.loop(hours=1)  
 async def post_trivia():
-    channel = bot.get_channel(1351247180744102013)  # Remplace par l'ID de ton canal
+    channel = bot.get_channel(1351247180744102013) 
     question, answers, correct_answer, category = get_trivia()
     if question:
         options = "\n".join([f"{i+1}. {answer}" for i, answer in enumerate(answers)])
